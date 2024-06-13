@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+img {
+    width: 200px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.signup, .login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 80px);     
+    background-color: rgb(237, 236, 236);
+    padding: 20px;
+}
+
+.login {
+    display: none; 
+}
+
+.container {
+    background-color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 4px 5px 10px #c8c6c6;
+    width: 100%;
+    max-width: 420px; /* Set a consistent max width */
+    height: auto; /* Make height auto to allow flexible content height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+h2 {
+    font-weight: 100;
+    color: #000;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;  
+}
+
+form > div {
+    margin-bottom: 15px;
+}
+
+form > div > input {
+    border: none;
+    background-color: rgb(237, 236, 236);
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+input[type=submit] {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.switch-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.switch-form a {
+    color: #007bff;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .header img {
+        width: 150px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    form > div > input {
+        padding: 8px;
+    }
+
+    input[type=submit] {
+        font-size: 18px;
+    }
+}
+
+
